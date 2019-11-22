@@ -50,6 +50,8 @@ const styles = StyleSheet.create({
         height: 200,
         width: 200,
         borderRadius: 100,
+        borderWidth:3,
+        borderColor: "purple",                                          
     },
     nomeUser: {
         fontSize: 25,
