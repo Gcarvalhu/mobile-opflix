@@ -31,10 +31,10 @@ class Profile extends Component {
     }
     render() {
         return (
-            <View>
+            <View style={styles.viewMae}>
                 <Image source={{ uri: this.state.foto }} style={styles.fotoPerfil} />
-                <Text  style={styles.nomeUser}>{this.state.nome}</Text>
-                <Text  style={styles.emailUser}>{this.state.email}</Text>
+                <Text style={styles.nomeUser}>{this.state.nome}</Text>
+                <Text style={styles.emailUser}>{this.state.email}</Text>
                 <TouchableOpacity style={styles.botaoSair} onPress={this._logout}>
                     <Text style={styles.sair} >Sair </Text>
                 </TouchableOpacity>
@@ -43,15 +43,19 @@ class Profile extends Component {
     }
 }
 const styles = StyleSheet.create({
+    viewMae: {
+        display: "flex",
+        flex: 1,
+    },
     fotoPerfil: {
         display: "flex",
         marginTop: 30,
-        marginLeft:108,
+        marginLeft: 108,
         height: 200,
         width: 200,
         borderRadius: 100,
-        borderWidth:3,
-        borderColor: "purple",                                          
+        borderWidth: 3,
+        borderColor: "purple",
     },
     nomeUser: {
         fontSize: 25,
@@ -65,12 +69,12 @@ const styles = StyleSheet.create({
     },
     botaoSair: {
         height: 40,
-        width:100,
+        width: 100,
         marginTop: 150,
         marginLeft: 160,
-        backgroundColor:"#A02BFF",
+        backgroundColor: "#A02BFF",
         borderRadius: 80,
-    } ,
+    },
     sair: {
         fontSize: 25,
         color: "#fff",

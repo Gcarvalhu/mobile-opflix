@@ -49,7 +49,7 @@ class Cadastro extends Component {
     }
     render() {
         return (
-            <View>
+            <View style={styles.viewMae}>
                 <Text style={styles.tituloLog}>Cadastre-se, é grátis!</Text>
                 <TextInput style={styles.inputNome} type="text" placeholder="Insira seu nome" value={this.state.nome} onChangeText={nome => this.setState({ nome })} />
                 <TextInput style={styles.inputEmail} type="text" placeholder="Email" value={this.state.email} onChangeText={email => this.setState({ email })} />
@@ -65,6 +65,10 @@ class Cadastro extends Component {
     }
 }
 const styles = StyleSheet.create({
+    viewMae: {
+        display: "flex",
+        flex: 1,
+    },
     tituloLog: {
         marginTop: 130,
         display: "flex",
@@ -76,8 +80,8 @@ const styles = StyleSheet.create({
         display: "flex",
         textAlign: "center",
         backgroundColor: "#DCDCDC",
-        width: 200,
-        marginLeft: 100,
+        width: 250,
+        marginLeft: 75,
         borderRadius: 30,
     },
     inputEmail: {
@@ -85,8 +89,8 @@ const styles = StyleSheet.create({
         display: "flex",
         textAlign: "center",
         backgroundColor: "#DCDCDC",
-        marginLeft: 100,
-        width: 200,
+        marginLeft: 75,
+        width: 250,
         borderRadius: 30,
     },
     inputSenha: {

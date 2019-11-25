@@ -44,7 +44,7 @@ class Lancamentos extends Component {
     }
     render() {
         return (
-            <View>
+            <View style={styles.viewMae}>
                 <ScrollView>
                     {/* <View> */}
                     <Text style={styles.tituloFilme}>Suspense</Text>
@@ -248,15 +248,19 @@ class Lancamentos extends Component {
 }
 
 const styles = StyleSheet.create({
+    viewMae: {
+        display: "flex",
+        flex: 1,
+    },
     img: {
         width: 200,
         height: 250,
         margin: 4,
         marginTop: 15,
-        marginBottom:15,
+        marginBottom: 15,
     },
     tituloFilme: {
-        paddingLeft:5,
+        paddingLeft: 5,
         paddingTop: 13,
         fontSize: 18,
         backgroundColor: "#9B52EB",
