@@ -16,6 +16,7 @@ class Profile extends Component {
 
     componentDidMount() {
         this._retornarToken();
+        console.disableYellowBox = true;
     }
 
     _retornarToken = async () => {

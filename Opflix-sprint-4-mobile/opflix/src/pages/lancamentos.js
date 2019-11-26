@@ -19,6 +19,7 @@ class Lancamentos extends Component {
     componentDidMount() {
         this._pegarToken();
         this._listarLancamentos();
+        console.disableYellowBox = true;
     }
     _listarLancamentos = async () => {
         await fetch('http://192.168.4.183:5000/api/Lancamentos', {
